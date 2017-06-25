@@ -46,8 +46,8 @@ function Start() {
         true, false, false, false
     ]);
     
-    audio.clip = AudioClip.Create("(null)", 0xfffffff, 1, SynthConfig.kSampleRate, false, true, function(data:float[]){});
-    audio.Play();
+    GetComponent.<AudioSource>().clip = AudioClip.Create("(null)", 0xfffffff, 1, SynthConfig.kSampleRate, false, true, function(data:float[]){});
+    GetComponent.<AudioSource>().Play();
 }
 
 function OnGUI() {
